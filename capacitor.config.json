@@ -1,0 +1,12 @@
+{
+  "appId": "com.writewaveai.studio",
+  "appName": "MyApp",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

@@ -1,0 +1,27 @@
+HOW TO GET YOUR PRIVACY POLICY ONLINE
+======================================
+
+The file 'dist.tar.gz' contains your privacy policy page.
+
+OPTION 1: Download from Bolt.new
+---------------------------------
+1. In the left sidebar, find "dist.tar.gz"
+2. Right-click on it
+3. Select "Download"
+4. Extract the file on your computer
+5. Go to https://app.netlify.com/drop
+6. Drag the 'dist' folder onto the page
+7. You'll get a URL like: https://xyz.netlify.app/privacy
+
+OPTION 2: Use Netlify CLI (if available in Bolt)
+------------------------------------------------
+Run this command in the terminal:
+npx netlify-cli deploy --dir=dist --prod
+
+OPTION 3: GitHub Pages
+-----------------------
+Push your code to GitHub and enable GitHub Pages pointing to the dist folder.
+
+Your privacy policy will be at: https://[your-url]/privacy
+
+For Google Play Store, use the /privacy URL as your Privacy Policy link.

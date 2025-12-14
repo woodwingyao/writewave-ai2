@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy to Netlify Instructions</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #00C7B7;
+            margin-bottom: 20px;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #00C7B7;
+            border-radius: 4px;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        a {
+            color: #00C7B7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #e8e8e8;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .big-button {
+            display: inline-block;
+            background: #00C7B7;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .big-button:hover {
+            background: #00a89a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Deploy Your Privacy Policy to Netlify</h1>
+
+        <p><strong>You need to deploy the <code>dist</code> folder to make your privacy policy publicly accessible.</strong></p>
+
+        <a href="https://app.netlify.com/drop" target="_blank" class="big-button">
+            Open Netlify Drop →
+        </a>
+
+        <div class="step">
+            <h3>Step 1: Open Netlify Drop</h3>
+            <p>Click the button above to open <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a> in a new tab.</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Find Your dist Folder</h3>
+            <p>The <code>dist</code> folder is located in your project directory:</p>
+            <code>/tmp/cc-agent/60342656/project/dist</code>
+            <p style="margin-top: 10px;"><em>If you can't access this path directly, ask your assistant to help you locate or download the dist folder.</em></p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Drag and Drop</h3>
+            <p>Drag the entire <code>dist</code> folder onto the Netlify Drop page.</p>
+            <p><strong>Important:</strong> Drag the folder itself, not the files inside it!</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Get Your URL</h3>
+            <p>After uploading, Netlify will give you a URL like:</p>
+            <code>https://random-name-123456.netlify.app</code>
+            <p style="margin-top: 10px;">Your privacy policy will be at:</p>
+            <code>https://random-name-123456.netlify.app/privacy</code>
+        </div>
+
+        <div class="step">
+            <h3>Step 5: Use in Google Play Store</h3>
+            <p>Copy the privacy policy URL and paste it into your Google Play Console when submitting your app!</p>
+        </div>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h2>Alternative: Use Netlify CLI (if logged in)</h2>
+        <p>If you're already logged into Netlify CLI, you can deploy with:</p>
+        <code>npx netlify-cli deploy --prod --dir=dist</code>
+    </div>
+</body>
+</html>
